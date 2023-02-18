@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 浅拷贝
+        var m = { a: 10, b: 20 }
+var n = m; 
+n.a = 15; // 这时m.a的值是多少
+console.log(m.a);  //15
+
+// 深拷贝
+var m = { a: 10, b: 20 } 
+var n = {a:m.a,b:m.b}; 
+n.a = 15;
+console.log(m.a);  //10
+    </script>
+</body>
+</html>
